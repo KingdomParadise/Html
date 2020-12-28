@@ -49,6 +49,11 @@ p {
 a {
     cursor: pointer;
     text-decoration: none;
+    z-index: 1;
+}
+
+sub {
+    z-index: 1;
 }
 
 a:hover {
@@ -215,7 +220,7 @@ a:hover {
 
 }
 
-#dropdownMenuButton {
+#dropdownButton {
     background-color: #f8f9fa;
     color: black;
     font-weight: 700;
@@ -230,12 +235,15 @@ ul {
     padding-left: 80px;
 }
 
-.dropdown-menu {
+.dropdown-content {
+    position: absolute;
+    top: 40px;
     background-color: #f8f9fa;
     border-color: #f8f9fa;
     border: 1px solid #89898a;
     width: 250px;
     text-align: left;
+    visibility: hidden;
 }
 
 li {
@@ -243,7 +251,7 @@ li {
     margin-bottom: 5px;
 }
 
-#dropdownMenuButton:focus {
+#dropdownButton:focus {
     box-shadow: 0 0 0 0;
 }
 

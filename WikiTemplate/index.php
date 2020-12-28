@@ -129,10 +129,10 @@
                                     <p>Sausages come in a huge range of national and regional varieties, which differ by their flavouring or spicing ingredients (garlic, peppers, wine, etc.), the meat(s) used in them and their manner of preparation</p>
                                     <!-- Start Dropdown Menu -->
                                     <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="" type="button" id="dropdownButton" >
                                             <i class="fas fa-list" style="margin-right: 10px;"></i> Contents
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="dropdown-content" id="dropdowncontent">
                                             <ul>
                                                 <li><a href="#">Etymology</a></li>
                                                 <li><a href="#">History</a></li>
@@ -163,7 +163,7 @@
                                             </h2>
                                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#Etymology">
                                                 <div class="accordion-body">
-                                                    <p>The word "sausage" was first used in English in the mid-15th century, spelled "sawsyge".<sup id="cite_ref-etymonline.com_1-0" class="reference"><a href="#cite_note-etymonline.com-1">[1]</a></sup> This word came from Old North French <i>saussiche</i> (Modern French <i>saucisse</i>)".<sup id="cite_ref-etymonline.com_1-1" class="reference"><a href="#cite_note-etymonline.com-1">[1]</a></sup> The French word came from Vulgar Latin <i>salsica</i> (sausage), from <i>salsicus</i> (seasoned with salt).<sup id="cite_ref-etymonline.com_1-2" class="reference"><a href="#cite_note-etymonline.com-1">[1]</a></sup></p>
+                                                    <p>The word "sausage" was first used in English in the mid-15th century, spelled "sawsyge". This word came from Old North French <i>saussiche</i> (Modern French <i>saucisse</i>)". The French word came from Vulgar Latin <i>salsica</i> (sausage), from <i>salsicus</i> (seasoned with salt).</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,7 +254,7 @@
                                 </div>
 
                                 <!-- Start Accordion List  -->
-                                <div class="accordion">
+                                <div class="accordion" style="padding-left: 15px;">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="Ingredients">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
@@ -353,6 +353,7 @@
         	<div class="menuitem"><div><i class="fas fa-home"></i><p>Home</p></div></div>
         </div>
         <div class="menumask"></div>
+
         <!-- End Nav Left menu -->
     </div>
 </body>
@@ -366,14 +367,23 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js" integrity="sha512-ZvbjbJnytX9Sa03/AcbP/nh9K95tar4R0IAxTS2gh2ChiInefr1r7EpnVClpTWUEN7VarvEsH3quvkY1h0dAFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/style.js"></script>
 	<script>	
 		$( document ).ready(function() {
 		    $('.dropdown-toggle').dropdown();
 		    $('#navbar').click(function(){
-			    $('.nav-left-menu').css('left','0px');
 			    $('.menumask').css('visibility','visible');
 			});
+            $('#dropdownButton').click(function(){
+                var dropdowncontent_state = document.getElementsByClassName('dropdown-content').dropdowncontent.style.visibility;
+                if(dropdowncontent_state == "" || dropdowncontent_state == "hidden"){
+                    $('.dropdown-content').css('visibility','visible');
+                }
+                else {
+                    $('.dropdown-content').css('visibility','hidden');
+                }
+            });
 
 			$('.menumask').click(function(){
 				$('.nav-left-menu').css('left','-320px');
