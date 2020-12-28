@@ -1,0 +1,9 @@
+.account {
+    float: right;
+    padding: 25px 20px 30px 40px;
+}
+
+.account > a:first-child {
+    margin-right: 25px;
+}
+
