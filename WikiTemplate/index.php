@@ -192,6 +192,30 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="Cashing">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <h4>Cashing</h4>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#Cashing">
+                                                <div class="accordion-body">
+                                                    <p><a href="/wiki/Sausage_making" title="Sausage making">Sausage making</a> is an outcome of efficient butchery. Traditionally, sausage makers <a href="/wiki/Salting_(food)" title="Salting (food)">salted</a> various <a href="/wiki/Tissue_(biology)" title="Tissue (biology)">tissues</a> and <a href="/wiki/Organ_(anatomy)" title="Organ (anatomy)">organs</a> such as scraps, <a href="/wiki/Organ_meat" class="mw-redirect" title="Organ meat">organ meats</a>, blood, and fat to help preserve them. They then stuffed them into tubular casings made from the cleaned intestines of the animal, producing the characteristic cylindrical shape. Hence, sausages, <a href="/wiki/Pudding" title="Pudding">puddings</a>, and <a href="/wiki/Salami" title="Salami">salami</a> are among the oldest of prepared foods, whether cooked and eaten immediately or dried to varying degrees.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2018)">citation needed</span></a></i>]</sup></p>
+                                                    <p>An <a href="/wiki/Akkadian_language" title="Akkadian language">Akkadian cuneiform</a> tablet records a dish of intestine casings filled with some sort of <a href="/wiki/Forcemeat" title="Forcemeat">forcemeat</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+                                                    <p>A <a href="/wiki/Chinese_sausage" title="Chinese sausage">Chinese type of sausage</a> has been described, <i>lup cheong</i> (<a href="/wiki/Pinyin" title="Pinyin">pinyin</a>: <i><span lang="zh-Latn-pinyin">làcháng</span></i>) from the <a href="/wiki/Northern_and_Southern_dynasties" title="Northern and Southern dynasties">Northern and Southern dynasties</a> (<a href="/wiki/589_BC" title="589 BC">589 BC</a>–<a href="/wiki/420_BC" title="420 BC">420 BC</a>), made from goat and lamb meat with salt, and flavoured with green onion, <a href="/wiki/Bean_sauce" class="mw-redirect" title="Bean sauce">bean sauce</a>, ginger, and pepper. The modern type of <i>lup cheong</i> has a comparatively long <a href="/wiki/Shelf_life" title="Shelf life">shelf life</a>, mainly because of a high content of <a href="/wiki/Lactobacilli" class="mw-redirect" title="Lactobacilli">lactobacilli</a>; so high that it is considered sour by many.<sup id="cite_ref-Zeuthen2007_3-0" class="reference"><a href="#cite_note-Zeuthen2007-3">[3]</a></sup></p>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-12">
+                                                            <img src="./img/Sausage_making.jpg">
+                                                            <p><a href="#">Sausage making</a> at home</p>
+                                                        </div>
+                                                        <div class="col-md-8 col-sm-12">
+                                                            <p>The <a href="/wiki/Ancient_Greece" title="Ancient Greece">Greek</a> poet <a href="/wiki/Homer" title="Homer">Homer</a> mentioned a kind of <a href="/wiki/Blood_sausage" title="Blood sausage">blood sausage</a> in the <i><a href="/wiki/Odyssey" title="Odyssey">Odyssey</a></i>, <a href="/wiki/Epicharmus" class="mw-redirect" title="Epicharmus">Epicharmus</a> wrote a comedy titled <i>The Sausage</i>, and <a href="/wiki/Aristophanes" title="Aristophanes">Aristophanes</a>' play <i><a href="/wiki/The_Knights" title="The Knights">The Knights</a></i> is about a sausage vendor who is elected leader. Evidence suggests that sausages were already popular both among the <a href="/wiki/Ancient_Greeks" class="mw-redirect" title="Ancient Greeks">ancient Greeks</a> and <a href="/wiki/Ancient_Rome" title="Ancient Rome">Romans</a> and most likely with the various tribes occupying the larger part of Europe.<sup id="cite_ref-T-P_4-0" class="reference"><a href="#cite_note-T-P-4">[4]</a></sup></p>
+                                                        </div>
+                                                    </div>
+                                                    <p>The most famous sausage in ancient Italy was from <a href="/wiki/Lucania" title="Lucania">Lucania</a> (modern <a href="/wiki/Basilicata" title="Basilicata">Basilicata</a>) and was called <i><a href="/wiki/Lucanica" title="Lucanica">lucanica</a></i>, a name which lives on in a variety of modern sausages in the Mediterranean.<sup id="cite_ref-Riley2007_5-0" class="reference"><a href="#cite_note-Riley2007-5">[5]</a></sup> During the reign of the Roman emperor <a href="/wiki/Nero" title="Nero">Nero</a>, sausages were associated with the <a href="/wiki/Lupercalia" title="Lupercalia">Lupercalia</a> festival.<sup id="cite_ref-All_about_sausages_6-0" class="reference"><a href="#cite_note-All_about_sausages-6">[6]</a></sup> Early in the 10th century during the <a href="/wiki/Byzantine_Empire" title="Byzantine Empire">Byzantine Empire</a>, <a href="/wiki/Leo_VI_the_Wise" title="Leo VI the Wise">Leo VI the Wise</a> outlawed the production of <a href="/wiki/Blood_sausage" title="Blood sausage">blood sausages</a> following cases of <a href="/wiki/Food_poisoning" class="mw-redirect" title="Food poisoning">food poisoning</a>.<sup id="cite_ref-All_about_sausages_6-1" class="reference"><a href="#cite_note-All_about_sausages-6">[6]</a></sup></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <!-- End Accordion List -->
                                     </div>
                                 </div>
@@ -339,10 +363,10 @@
 	-->
 
 	<!-- Using cdn cloudflare url of all.min.css -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/style.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js" integrity="sha512-ZvbjbJnytX9Sa03/AcbP/nh9K95tar4R0IAxTS2gh2ChiInefr1r7EpnVClpTWUEN7VarvEsH3quvkY1h0dAFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/style.js"></script>
 	<script>	
 		$( document ).ready(function() {
 		    $('.dropdown-toggle').dropdown();
