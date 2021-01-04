@@ -1,9 +1,390 @@
-.account {
-    float: right;
-    padding: 25px 20px 30px 40px;
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.account > a:first-child {
-    margin-right: 25px;
+.header-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-right > a {
+    margin-right: 20px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-right > a:hover {
+    text-decoration: underline;
+}
+
+.header-right > a > i {
+    margin-left: 10px;
+}
+
+.header-right {
+    margin-top: 20px;;
+}
+
+.header-middle {
+    margin-top: 20px;
+}
+
+.header-middle > a {
+    margin-right: 30px;
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-middle > a:hover {
+    color: black;
+    font-weight: 400;
+}
+
+.header-middle > a:first-child {
+    margin-left: 80px;
+}
+
+.search-bar {
+    margin-top: 30px;
+}
+
+#search-box {
+    margin-left: 20px;
+    height: 70px;
+}
+
+#search-input-box {
+    border-radius: 0px;
+    background-color: #EBEBEB;
+    border: 0px;
+    font-size: 25px;;
+}
+
+#search-input-box:focus {
+    box-shadow: 0 0 0 0;
+}
+
+#button-addon2 {
+    border-radius: 0px;
+    width: 205px;
+    border: 0px;
+    background-color: #00838C;
+    color: white;
+    font-size: 20px;
+}
+
+#button-addon2:hover {
+    background-color: #09757A;
+}
+
+.header-container > div > div > p {
+    margin-top: 52px;
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+    color: grey;
+}
+
+.header-container > div > div > p:first-child{
+    margin-left: 45px;
+}
+
+.header-container > div > div > p:hover {
+    cursor: pointer;
+}
+
+.body-container {
+    overflow-x: hidden;
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+    background-position: center center;
+    background-size: cover !important;
+    height: 450px;
+}
+
+.body-left {
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.body-right {
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.body-top > p {
+    color: white;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.body-middle > h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.btn-banner {
+    width: 285px;
+    height: 60px;
+    background-color: #fff;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-banner:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.btn-banner:hover {
+    background-color: #EBEBEB;
+}
+
+.body-last {
+    margin-top: 50px;
+}
+
+.body-last > p {
+    color: white;
+}
+
+.btn-banner-right {
+    width: 352px;
+    height: 60px;
+    background-color: #fff;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-banner-right:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.btn-banner-right:hover {
+    background-color: #EBEBEB;
+}
+
+.body-bottom > a {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.banner-bottom {
+    height: 100px;
+    background-color: #09757a;
+}
+
+.banner-bottom > div {
+    padding-left: 100px;
+    display: inline-block;
+}
+
+.banner-bottom > div > div > div > img {
+    margin-top: 20px;
+}
+
+.banner-bottom > div > div > div > h3 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.banner-bottom > div > div > div > p {
+    color: white;
+}
+
+.banner-bottom > div > button {
+    width: 240px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: #09757a;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid white;
+}
+
+.banner-bottom > div > button:first-child {
+    margin-right: 50px;
+    margin-left: 70px;
+}
+
+.banner-bottom > div > button:last-child {
+    margin-left: 20px;
+}
+
+.banner-bottom > div > button:hover {
+    background-color: white;
+    color: black;
+}
+
+.left-content {
+    margin-top: 80px;
+}
+
+.left-content > div:first-child {
+    padding-left: 130px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+
+.left-content > div:last-child {
+    text-align: center;
+    padding-left: 60px;
+}
+
+.left-content > div:last-child >img {
+    width: 700px;
+}
+
+.left-content > div:first-child > p {
+    font-size: 20px;
+}
+
+.left-content > div:first-child > h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+} 
+
+.left-content > div:first-child > button {
+    margin-top: 20px;
+    width: 285px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.left-content > div:first-child > button:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.left-content > div:first-child > button:hover {
+    background-color: #EBEBEB;
+}
+
+
+.right-content {
+    margin-top: 0px;
+}
+
+.right-content > div:first-child {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+
+.right-content > div:first-child {
+    text-align: center;
+    padding-right: 100px;
+}
+
+.right-content > div:last-child {
+    padding-right: 110px;
+}
+
+.right-content > div:first-child >img {
+    width: 700px;
+}
+
+.right-content > div:last-child > p:first-child {
+    margin-top: 200px;
+}
+
+.right-content > div:last-child > h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.right-content > div:last-child > p {
+    font-size: 20px;
+}
+
+.right-content > div:last-child > button {
+    margin-top: 20px;
+    width: 285px;
+    height: 60px;
+    background-color: #fff;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right-content > div:last-child > button:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.right-content > div:last-child > button:hover {
+    background-color:  #EBEBEB;
+}
+
+.right-content > div:last-child > a {
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right-content > div:last-child > a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    height: 600px;
+    overflow-x: hidden;
+}
+
+.top-footer {
+    height: 110px;
+    background-color: #09757a;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.top-footer > h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.bottom-footer {
+    height: 490px;
+    background-color: #111;
+}
+
+.bottom-footer > div > div {
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.bottom-footer > div > div > a {
+    display: block;
+    color: #bac0c3;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.bottom-footer > div > div > a:hover {
+    text-decoration: underline;
+}
+
+.bottom-footer > div > div > h3 {
+    color: white;
+    margin-bottom: 60px;
 }
 
