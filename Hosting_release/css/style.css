@@ -4,7 +4,7 @@
 }
 
 .header-container {
-    padding-left: 50px;
+    padding-left: 120px;
     padding-right: 50px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .header-middle > a {
-    margin-right: 30px;
+    margin-right: 20px;
     color: grey;
     text-decoration: none;
     font-size: 18px;
@@ -186,7 +186,7 @@
 }
 
 .banner-bottom > div {
-    padding-left: 100px;
+    padding-left: 30px;
     display: inline-block;
 }
 
@@ -196,7 +196,7 @@
 
 .banner-bottom > div > div > div > h3 {
     color: white;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -234,9 +234,9 @@
 }
 
 .left-content > div:first-child {
-    padding-left: 130px;
+    padding-left: 80px;
     padding-right: 100px;
-    padding-top: 100px;
+    padding-top: 0px;
 }
 
 .left-content > div:last-child {
@@ -245,7 +245,7 @@
 }
 
 .left-content > div:last-child >img {
-    width: 700px;
+    width: 600px;
 }
 
 .left-content > div:first-child > p {
@@ -282,7 +282,7 @@
 }
 
 .right-content > div:first-child {
-    padding-left: 100px;
+    padding-left: 70px;
     padding-right: 100px;
     padding-top: 100px;
 }
@@ -293,15 +293,16 @@
 }
 
 .right-content > div:last-child {
-    padding-right: 110px;
+    padding-right: 50px;
+    padding-left: 80px;
 }
 
 .right-content > div:first-child >img {
-    width: 700px;
+    width: 600px;
 }
 
 .right-content > div:last-child > p:first-child {
-    margin-top: 200px;
+    margin-top: 95px;
 }
 
 .right-content > div:last-child > h2 {
