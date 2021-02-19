@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <!-- Metatag List  -->
+    <meta charset="UTF-8">
+    <meta name="Generator" content="VisualStudioCode">
+    <meta name="Author" content="KingdomParadise">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="This is serverstation54 website.">
+    <!-- The title - Website Name -->
+    <title>Serverstation54</title>
+    <!-- link Bootstrap by cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+        integrity="sha512-thoh2veB35ojlAhyYZC0eaztTAUhxLvSZlWrNtlV01njqs/UdY3421Jg7lX0Gq9SRdGVQeL8xeBp9x1IPyL1wQ=="
+        crossorigin="anonymous" />
+    <!-- link Bootstrap by local vendor
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+    -->
+    <!-- link Fontawesome by cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- link Fontawesome by local vendor 
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.css">
+    -->
+    <!-- link style.css and custom.css -->
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/custom.css">
+ </head>
+ <body>
+    <div class="wrapper">
+        <div class="container">
+            
+<?php
+	if(!isset($_GET['file'])){
+?>
+    <form action="" method="post" enctype="multipart/form-data">
+    	<input type="file" name="ms_file" required>
+    	<input type="submit" value="view_file">
+	</form>
+<?php
+	}else{
+?>
+    <div id='viewer'>
+        
+    </div>
+
+<script>
+ 
+    var viewer = fileViewer('<?=pathinfo($_GET['file'], PATHINFO_EXTENSION)?>')
+
+    if (viewer == 'Knack') {
+        window.location.replace('http://supernesclassic.com/ms-viewer/<?=$_GET['file']?>');
+    } else if (viewer == 'Microsoft Office') {
+        var iframe = '<iframe style="width:100%; height:100%; border-style:none;" src="https://view.officeapps.live.com/op/embed.aspx?src=http://supernesclassic.com/ms-viewer/<?=$_GET['file']?>"></iframe>'
+		document.getElementById("viewer").innerHTML = iframe;
+    } else if (viewer == 'Video') {
+        var video_embed = '<video style="width:100%; height:100%;" src="http://supernesclassic.com/ms-viewer/<?=$_GET['file']?>" controls autoplay></video>'
+		document.getElementById("viewer").innerHTML = iframe;
+    } else { //Google
+        var iframe = '<iframe style="width:100%; height:100%; border-style:none;" src="https://docs.google.com/gview?url=http://supernesclassic.com/ms-viewer/<?=$_GET['file']?>&embedded=true"></iframe>'
+        document.getElementById("viewer").innerHTML = iframe;
+    }
+
+    function fileViewer(e) {
+        switch (e = e.toLowerCase()) {
+            case "pdf":
+            case "txt":
+            case "html":
+            case "jpg":
+            case "jpeg":
+            case "bmp":
+            case "png":
+                return "Knack";
+            case "docx":
+            case "docm":
+            case "doc":
+            case "dotx":
+            case "dotm":
+            case "dot":
+            case "xlsx":
+            case "xls":
+            case "ppts":
+            case "ppt":
+            case "pptx":
+                return "Google";
+            case "mpg":
+            case "mpeg":
+            case "wmv":
+            case "mp4":
+            case "dvr-ms":
+            case "avi":
+            case "mov":
+            case "ogg":
+                return "Video";
+            default:
+                return "Google";
+        }
+    }
+</script>
+    
+<?php
+	}
+	
+	if(isset($_FILES) && !empty($_FILES)){
+	    if (move_uploaded_file($_FILES['ms_file']['tmp_name'], __DIR__.'/'. $_FILES["ms_file"]['name'])) {
+?>
+    <script>
+        window.location.replace('<?="http://supernesclassic.com/ms-viewer/index.php?file=".$_FILES["ms_file"]["name"]?>');
+    </script>
+
+<?php
+    } else {
+       		echo "File not uploaded";
+    	}
+	}
+?>
+        </div>
+    </div>
+ </body>
+    <!-- link Bootstrap by cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+        integrity="sha512-ZvbjbJnytX9Sa03/AcbP/nh9K95tar4R0IAxTS2gh2ChiInefr1r7EpnVClpTWUEN7VarvEsH3quvkY1h0dAFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"
+        integrity="sha512-q2vREMvON/xrz1KuOj5QKWmdvcHtM4XNbNer+Qbf4TOj+RMDnul0Fg3VmmYprdf3fnL1gZgzKhZszsp62r5Ugg=="
+        crossorigin="anonymous"></script>
+
+    <!-- link Bootstrap by local vendor 
+    <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    -->
+    <!-- link style.js and custom.js -->
+    <script type="text/javascript" src="./js/style.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+</html>
